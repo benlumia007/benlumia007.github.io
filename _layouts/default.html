@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            {% if page.title == "Home" %}
+              {{ site.title }}{% if site.tagline %} &middot; {{ site.title }}{{ site.tagline }}{% endif %}
+            {% else %}
+              {{ page.title }} &middot; {{ site.title }}
+            {% endif %}
+          </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{{ '/assets/css/screen.css' | relative_url }}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    </head>
+<body>
+<div id="container" class="site-container">
+    <header id="header" class="site-header">
+        <div class="branding-navigation">
+            <div class="site-branding">
+                <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{site.title}}</a></h1>
+                <h3 class="site-description">{{site.tagline}}</h3>
+            </div>
+            <nav id="primary" class="primary-navigation">
+                <ul>
+                    {% for item in site.data.navigation.primary %}
+                        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                  {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <footer id="footer" class="site-footer">
+
+    </footer>
+    </div>
+</body>
+</html>
