@@ -1,0 +1,9 @@
+primary:
+  - title: "About"
+    url: "/about.html"
+  - title: "Portfolio"
+    url: /portfolio.html
+  - title: "Blog"
+    url: /blog.html
+  - title: "Contact"
+    url: /contact.html
