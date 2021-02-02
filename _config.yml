@@ -1,1 +1,13 @@
-theme: jekyll-theme-cayman
+title   : "Benjamin Lu"
+subtitle: "Web Developer"
+
+exclude:
+  - node_modules
+  - package-lock.json
+  - package.json
+  - resources
+  - webpack.mix.export.js
+  - webpack.mix.js
+
+  minima:
+  date_format: "%b %-d, %Y"
