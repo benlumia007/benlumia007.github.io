@@ -2,12 +2,14 @@ title   : "Benjamin Lu"
 subtitle: "Web Developer"
 
 exclude:
-  - node_modules
-  - package-lock.json
-  - package.json
-  - resources
-  - webpack.mix.export.js
-  - webpack.mix.js
+ - node_modules
+ - package-lock.json
+ - package.json
+ - resources
+ - webpack.mix.export.js
+ - webpack.mix.js
 
-  minima:
+minima:
   date_format: "%b %-d, %Y"
+
+remote_theme: benlumia007/never-forgotten
