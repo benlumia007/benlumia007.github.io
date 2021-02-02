@@ -62,3 +62,30 @@ h6 {
   background: #fcfcfc;
   border-bottom: 0.063em solid #f3f3f3;
 }
+.site-header .branding-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.125rem;
+}
+.site-header .branding-navigation .site-branding .site-title,
+.site-header .branding-navigation .site-branding .site-description {
+  margin: 0;
+  padding: 0;
+}
+.site-header .branding-navigation .site-branding .site-title {
+  float: left;
+}
+.site-header .branding-navigation .site-branding .site-description {
+  float: left;
+  padding: 1rem;
+}
+.site-header .branding-navigation .primary-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.site-header .branding-navigation .primary-navigation ul li {
+  display: inline-block;
+  padding: 1rem;
+}
