@@ -1,0 +1,34 @@
+<section id="content" class="site-content">
+    <div id="main" class="content-area">
+        <article id="article" class="post">
+            <header class="entry-header">
+                {% if page.title != "Blog" %}
+                    <h1 class="entry-title">{{page.title}}</h1>
+                {% endif %}
+                <span class="entry-metadata">
+                    {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+                    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                      {{ page.date | date: date_format }}
+                    </time>
+                    {%- if page.modified_date -%}
+                      ~ 
+                      {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+                      <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+                        {{ mdate | date: date_format }}
+                      </time>
+                    {%- endif -%}
+                    {%- if page.author -%}
+                      • {% for author in page.author %}
+                        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                          <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+                          {%- if forloop.last == false %}, {% endif -%}
+                      {% endfor %}
+                    {%- endif -%}</span>
+                
+            </header>
+            <div class="entry-content">
+                {{content}}
+            </div>
+        </article>
+    </div>
+</section>
