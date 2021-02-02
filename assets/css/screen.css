@@ -1,3 +1,9 @@
+body {
+  font-family: "Merriweather", serif;
+  font-family: var(--font-family-primary, "Merriweather", serif);
+  margin: 0;
+}
+
 h1 {
   display: block;
   font-family: "Fira Sans", serif;
@@ -50,4 +56,9 @@ h6 {
   font-size: 1rem;
   font-weight: 700;
   margin: 2.33em 0;
+}
+
+.site-header {
+  background: #fcfcfc;
+  border-bottom: 0.063em solid #f3f3f3;
 }
