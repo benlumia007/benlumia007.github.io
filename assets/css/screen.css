@@ -89,3 +89,36 @@ h6 {
   display: inline-block;
   padding: 1rem;
 }
+
+.site-content {
+  padding-top: 3rem;
+}
+.site-content .content-area {
+  line-height: 1.8rem;
+  margin: 0 auto;
+  max-width: 45rem;
+}
+.site-content .content-area .post .entry-header {
+  text-align: center;
+}
+.site-content .content-area .post .entry-header .entry-title {
+  margin: 0;
+  padding: 0;
+}
+.site-content .content-area .post .entry-content .entry-header {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.site-content .content-area .post .entry-content .entry-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.site-content .content-area .post .entry-content .entry-header ul .entry-title {
+  margin: 0;
+  padding: 0;
+}
+.site-content .content-area .post .entry-content .entry-header ul .entry-title a {
+  text-decoration: none;
+}
