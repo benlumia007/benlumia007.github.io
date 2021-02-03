@@ -1,0 +1,43 @@
+.site-content {
+    padding-top: 3rem;
+
+    .content-area {
+        line-height: 1.8rem;
+        margin: 0 auto;
+        max-width: 45rem;
+    
+        .post {
+            .entry-header {
+                text-align: center;
+        
+                .entry-title {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        
+            .entry-content {
+                .entry-header {
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+        
+                    ul {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+        
+                        .entry-title {
+                            margin: 0;
+                            padding: 0;
+        
+                            a {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

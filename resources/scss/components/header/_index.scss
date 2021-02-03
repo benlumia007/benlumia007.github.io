@@ -1,0 +1,41 @@
+.site-header {
+    background: #fcfcfc;
+    border-bottom: 0.063em solid #f3f3f3;
+
+    .branding-navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.125rem;
+
+        .site-branding {
+            .site-title,
+            .site-description {
+                margin: 0;
+                padding: 0;
+            }
+
+            .site-title {
+                float: left;
+            }
+
+            .site-description {
+                float: left;
+                padding: 1rem;
+            }
+        }
+
+        .primary-navigation {
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                text-align: right;
+
+                li {
+                    display: inline-block;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
